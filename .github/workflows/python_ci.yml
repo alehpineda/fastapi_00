@@ -70,6 +70,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/fast-api-workshop:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/fastapi_00:latest
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
